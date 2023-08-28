@@ -1,8 +1,16 @@
 {
     "dependencies": {
-        "express": "^4.18.2"
+        "axios": "^1.5.0",
+        "body-parser": "^1.20.2",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "express-handlebars": "^7.1.2",
+        "jsonwebtoken": "^9.0.1",
+        "moment": "^2.29.4",
+        "mongodb": "^5.8.1"
     },
     "scripts": {
-        "build": "bun build index.js --compile --outfile server && mkdir -p dist && mv ./server dist"
+        "build": "bun build index.js --compile --outfile server && mkdir -p dist && mv ./server dist",
+        "start": "bun index.js"
     }
 }
